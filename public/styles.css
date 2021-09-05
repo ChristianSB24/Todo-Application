@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+  
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    color: black;
+    background: #50a3a2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width:350px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+form {
+    max-width:300px
+}
+  
+.container h1 {
+    text-align:center;
+    font-size: 2rem;
+    font-weight: 200;
+}
+  
+input {
+    border: 1px solid rgba(252, 252, 252, 0.4);
+    background-color: rgba(252, 252, 252, 0.2);
+    padding: 0px 0px 0px 10px;
+    width: 300px;
+    padding: 10px 0px 10px 40px;
+    margin: 0 auto 10px auto;
+    font-size: .9rem;
+    color: black;
+    text-align:left;
+    font-weight: 300;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+.error {
+    border:1px solid;
+    border-color:red;
+}
+
+.invalidButton {
+    opacity:.5
+}
+  
+button {
+    background-color: white;
+    border-style:solid;
+    border-color:#50a3a2;
+    padding: 10px 15px;
+    color: #50a3a2;
+    border-radius: 3px;
+    width:100%;
+    font-size: 1.1rem;
+}
+
+.button-container {
+    text-align:center;
+    margin-top:30px
+} 
+
+i {
+    position: absolute;
+    margin: 15px;
+    color:black;
+    width: 20px;
+    text-align: left;
+}
+
+/* TodoList Component*/
+.heading {
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1 {
+    padding: 3px 19px;
+    font-size: 3rem;
+}
+
+.todo-container {
+    width: 100%;
+    margin-top:30px;
+    height: auto;
+    min-height: 500px;
+    max-width: 400px;
+    min-width: 250px;
+    background: #eee;
+    border-radius: 20px;
+    padding: 16px 0;
+    box-sizing: border-box;
+}
+
+.addbutton {
+    position:relative;
+    display:inline; 
+    float:right;
+}
+
+.inputarea {
+    display:inline;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 0.7rem;
+    border: 1px solid black;
+    font-size: 1rem;
+    color: black;
+    width:200px;
+  }
+
+.inputbutton {
+    display:inline
+}
+
+.logoutbutton {
+    position:absolute;
+    top:5px;
+    right:5px;
+    z-index:2;
+}
+
+.top-of-box {
+    width:100%;
+    border-style:none none solid none;
+    border-color:black;
+    padding: 0 16px;
+}
+
+.todoitem {
+    width:100%;
+    border-style:none none solid none;
+    border-color:black;
+    padding: 16px 16px;
+}
+
+.todoitem i {
+    position:relative;
+    display:inline;
+    float:right;
+    text-align:center;
+    margin: auto 10px
+}
+
+.searchbox {
+    width:50%;
+    background: #56cac8;
+    border-radius:40%;
+}
+
+@media screen and (max-width: 490px){
+    .todo-container {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+        max-width: 250px;
+        min-width: 200px;
+      }
+
+    .heading h1 {
+        font-size:1.5rem;
+    }
+
+    .logoutbutton {
+        font-size:1rem;
+    }
+
+    button {
+        font-size:.6rem;
+    }
+
+    .inputarea {
+        width:150px;
+        height:20px;
+        font-size:.7rem;
+      }
+}
+
